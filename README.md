@@ -20,6 +20,8 @@ O Food Explorer é um projeto de desafio final do curso Explorer da Rocketseat. 
 
 Você pode testar a aplicação <a href="foodexploreraug.netlify.app">aqui</a> 
 
+Para acessar a função de Admin, de Login com o email admin2@email.com e a senha: admin2senha
+
 
 
 
