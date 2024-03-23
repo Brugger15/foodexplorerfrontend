@@ -1,0 +1,26 @@
+import { FiMinus, FiPlus } from 'react-icons/fi';
+import { Container } from './style';
+
+export function NumberPicker({ number, setNumber }) {
+    const incrementNumber = () => {
+        setNumber((prevNumber) => prevNumber + 1);
+    };
+
+    const decrementNumber = () => {
+        if (number > 1) {
+            setNumber((prevNumber) => prevNumber - 1);
+        }
+    };
+
+    return (
+        <Container>
+            <button onClick={decrementNumber}>
+                <FiMinus />
+            </button>
+            <span>{number < 10 ? `0${number}` : number}</span>
+            <button onClick={incrementNumber}>
+                <FiPlus />
+            </button>
+        </Container>
+    );
+}
